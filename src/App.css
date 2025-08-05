@@ -1,0 +1,18 @@
+/* #root {
+} */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+}
