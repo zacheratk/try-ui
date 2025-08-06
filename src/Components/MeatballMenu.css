@@ -1,0 +1,56 @@
+meatball-menu {
+  position: relative;
+  display: inline-block;
+}
+
+
+.meatball-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px;
+  color: var(--light_foreground) !important;
+}
+
+
+.meatball-btn .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  display: block;
+}
+
+.menu-dropdown {
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  border-radius: 5px;
+  min-width: 100px;
+  z-index: 99;
+  padding: 6px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #222;
+}
+
+.menu-item:hover {
+  background: #f2f2f2;
+}
+
+.menu-item.delete {
+  color: #c0392b;
+}

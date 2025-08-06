@@ -16,3 +16,8 @@ nav li {
   list-style: none;
   display: inline;
 }
+
+.main-padding {
+  width: 80vw;
+  margin: 0 auto;
+}

@@ -5,12 +5,13 @@ import PostView from "./Routes/PostView";
 import { Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import NotFound from "./Routes/NotFound";
+import EditPost from "./Routes/EditPost";
 
 function App() {
   return (
     <>
-      <header>
-        <h1>Try Ui</h1>
+      <header className="main-padding">
+        <h1>Try UI</h1>
         <nav>
           <ul>
             <li>
@@ -25,12 +26,14 @@ function App() {
           </ul>
         </nav>
       </header>
+      <div className="line" />
       <main>
         <Routes>
           <Route path="/" element={<Feed />} />
           <Route path="/create" element={<CreatePost />} />
           <Route path="/about" element={<About />} />
           <Route path="/post/:id" element={<PostView />} />
+          <Route path="/edit/:id" element={<EditPost />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

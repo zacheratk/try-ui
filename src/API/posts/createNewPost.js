@@ -6,6 +6,8 @@ const createNewPost = async (title, body, image_url) => {
       title,
       body,
       image_url,
+      upvotes: 0,
+      comments: [],
     },
   ]);
 
