@@ -29,7 +29,7 @@ const Feed = () => {
             time={post.created_at}
             image_url={post.image_url}
             upvotes={post.upvotes}
-            comment_count={post.comments.length}
+            comment_count={post.comments ? post.comments.length : 0}
           />
         ))
       ) : (
