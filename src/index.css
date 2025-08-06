@@ -166,10 +166,17 @@ h3 {
 .card h3 {
   padding-bottom: 0.5rem;
 }
-.card img, .card .img-placeholder {
+.card-image-wrapper {
   width: 328px;
   height: 193px;
   padding-bottom: 0.5rem;
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .info-row {
@@ -272,4 +279,3 @@ form .error {
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
-

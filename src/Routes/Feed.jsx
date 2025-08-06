@@ -37,7 +37,7 @@ const Feed = () => {
     });
 
   return (
-    <main className="feed">
+    <main className="feed main-padding">
       {/* Search and Sort Controls */}
       <div className="feed-controls" style={{ marginBottom: "1rem" }}>
         <input
