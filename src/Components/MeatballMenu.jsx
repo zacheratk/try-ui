@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import supabase from "../API/client";
-import MenuIcon from "../assets/menu.svg?react"
-import "./MeatBallMenu.css"
+import MenuIcon from "../assets/menu.svg?react";
+import "./MeatballMenu.css";
 
 export default function MeatballMenu({ postId }) {
   const [open, setOpen] = useState(false);
@@ -31,7 +31,7 @@ export default function MeatballMenu({ postId }) {
         onClick={() => setOpen((prev) => !prev)}
         aria-label="Open menu"
       >
-    <MenuIcon />
+        <MenuIcon />
       </button>
 
       {open && (
